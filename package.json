@@ -1,8 +1,12 @@
 {
   "name": "@littlegiqnt/eslint-config",
-  "type": "module",
   "description": "ESLint config for my TypeScript projects",
+  "version": "0.0.1",
+  "type": "module",
   "module": "src/index.ts",
+  "scripts": {
+    "publish": "npm publish --access public"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.2",
     "eslint": "^9.6.0",

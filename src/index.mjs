@@ -16,13 +16,6 @@ export default antfu(
         },
         typescript: {
             tsconfigPath: "tsconfig.json",
-            overrides: {
-                "ts/no-misused-promises": ["error", { checksVoidReturn: { arguments: false } }],
-                "ts/no-use-before-define": "off",
-                "ts/return-await": ["error", "always"],
-                "ts/require-await": ["error"],
-                "ts/strict-boolean-expressions": ["error", { allowNullableBoolean: true }],
-            },
         },
         stylistic: {
             // indent: 4,
@@ -50,6 +43,13 @@ export default antfu(
         rules: {
             ...promisePlugin.configs.recommended.rules,
             "promise/always-return": "off",
+
+            // TypeScript
+            "ts/no-misused-promises": ["error", { checksVoidReturn: { arguments: false } }],
+            "ts/no-use-before-define": "off",
+            "ts/return-await": ["error", "always"],
+            "ts/require-await": ["error"],
+            "ts/strict-boolean-expressions": ["error", { allowNullableBoolean: true }],
         },
     },
 );

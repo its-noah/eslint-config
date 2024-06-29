@@ -2,8 +2,10 @@
   "name": "@littlegiqnt/eslint-config",
   "description": "ESLint config for my TypeScript projects",
   "version": "0.0.1",
+  "main": "src/index.mjs",
   "type": "module",
-  "module": "src/index.ts",
+  "module": "src/index.mjs",
+  "public": true,
   "scripts": {
     "publish": "npm publish --access public"
   },

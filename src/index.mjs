@@ -13,6 +13,13 @@ export default antfu(
             "jsonc/sort-keys": "off",
             "node/prefer-global/buffer": "off",
             "node/prefer-global/process": "off",
+
+            // TypeScript
+            "ts/no-misused-promises": ["error", { checksVoidReturn: { arguments: false } }],
+            "ts/no-use-before-define": "off",
+            "ts/return-await": ["error", "always"],
+            "ts/require-await": ["error"],
+            "ts/strict-boolean-expressions": ["error", { allowNullableBoolean: true }],
         },
         typescript: {
             tsconfigPath: "tsconfig.json",
@@ -43,13 +50,8 @@ export default antfu(
         rules: {
             ...promisePlugin.configs.recommended.rules,
             "promise/always-return": "off",
-
-            // TypeScript
-            "ts/no-misused-promises": ["error", { checksVoidReturn: { arguments: false } }],
-            "ts/no-use-before-define": "off",
-            "ts/return-await": ["error", "always"],
-            "ts/require-await": ["error"],
-            "ts/strict-boolean-expressions": ["error", { allowNullableBoolean: true }],
+            "promise/no-promise-in-callback": "off",
+            "promise/no-callback-in-promise": "off",
         },
     },
 );

@@ -8,7 +8,6 @@ export default antfu(
             "curly": ["error", "multi-line"],
             "func-style": ["error", "expression"],
             "no-console": ["warn", { allow: ["debug"] }],
-            "require-await": "error",
             "antfu/if-newline": "off",
             "antfu/top-level-function": "off",
             "jsonc/sort-keys": "off",
@@ -20,6 +19,8 @@ export default antfu(
             overrides: {
                 "ts/no-misused-promises": ["error", { checksVoidReturn: { arguments: false } }],
                 "ts/no-use-before-define": "off",
+                "ts/return-await": ["error", "always"],
+                "ts/require-await": ["error"],
                 "ts/strict-boolean-expressions": ["error", { allowNullableBoolean: true }],
             },
         },

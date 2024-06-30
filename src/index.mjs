@@ -7,7 +7,7 @@ export default antfu(
         rules: {
             "curly": ["error", "multi-line"],
             "func-style": ["error", "expression"],
-            "no-console": ["warn", { allow: ["debug"] }],
+            "no-console": "off",
             "antfu/if-newline": "off",
             "antfu/top-level-function": "off",
             "jsonc/sort-keys": "off",

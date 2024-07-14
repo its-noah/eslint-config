@@ -1,3 +1,5 @@
+import { fileURLToPath } from "node:url";
+import { dirname } from "node:path";
 import antfu from "@antfu/eslint-config";
 import promisePlugin from "eslint-plugin-promise";
 
@@ -24,7 +26,7 @@ export default antfu(
         typescript: {
             parserOptions: {
                 project: "./tsconfig.json",
-                tsconfigRootDir: __dirname,
+                tsconfigRootDir: dirname(fileURLToPath(import.meta.url)),
             },
         },
         stylistic: {

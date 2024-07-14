@@ -22,7 +22,10 @@ export default antfu(
             "ts/strict-boolean-expressions": ["error", { allowNullableBoolean: true }],
         },
         typescript: {
-            tsconfigPath: "tsconfig.json",
+            parserOptions: {
+                project: "./tsconfig.json",
+                tsconfigRootDir: __dirname,
+            },
         },
         stylistic: {
             // indent: 4,

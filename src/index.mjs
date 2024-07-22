@@ -8,6 +8,7 @@ export default antfu(
             "curly": ["error", "multi-line"],
             "func-style": ["error", "expression"],
             "no-console": "off",
+            "no-restricted-syntax": "off",
             "antfu/if-newline": "off",
             "antfu/top-level-function": "off",
             "jsonc/sort-keys": "off",

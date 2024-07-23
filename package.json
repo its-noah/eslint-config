@@ -7,7 +7,8 @@
   "module": "src/index.mjs",
   "public": true,
   "scripts": {
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "inspect": "bunx @eslint/config-inspector --config src/index.mjs"
   },
   "dependencies": {
     "@antfu/eslint-config": "^2.23.2",

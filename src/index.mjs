@@ -16,10 +16,11 @@ export default antfu(
             "node/prefer-global/process": "off",
 
             // TypeScript
+            "ts/no-floating-promises": "error",
             "ts/no-misused-promises": ["error", { checksVoidReturn: { arguments: false } }],
             "ts/no-use-before-define": "off",
-            "ts/return-await": ["error", "always"],
             "ts/require-await": ["error"],
+            "ts/return-await": ["error", "always"],
             "ts/strict-boolean-expressions": ["error", { allowNullableBoolean: true }],
         },
         typescript: {

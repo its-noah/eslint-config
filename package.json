@@ -10,8 +10,8 @@
     "publish": "npm publish --access public"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^2.22.2",
-    "eslint-plugin-promise": "^6.4.0"
+    "@antfu/eslint-config": "^2.23.2",
+    "eslint-plugin-promise": "^6.6.0"
   },
   "peerDependencies": {
     "eslint": "^9.7.0"

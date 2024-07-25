@@ -20,7 +20,7 @@ export default antfu(
                 project: "./tsconfig.json",
             },
             overrides: {
-                "no-floating-promises": "error",
+                "ts/no-floating-promises": "error",
                 "ts/no-misused-promises": ["error", { checksVoidReturn: { arguments: false } }],
                 "ts/require-await": ["error"],
                 "ts/return-await": ["error", "always"],

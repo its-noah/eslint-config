@@ -6,6 +6,7 @@ export default antfu(
         isInEditor: false,
         rules: {
             "curly": ["error", "multi-line"],
+            "dot-notation": "off",
             "func-style": ["error", "expression"],
             "no-console": "off",
             "no-restricted-syntax": "off",

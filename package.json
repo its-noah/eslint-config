@@ -1,5 +1,5 @@
 {
-  "name": "@littlegiqnt/eslint-config",
+  "name": "@its-noah/eslint-config",
   "description": "ESLint config for my TypeScript projects",
   "version": "0.0.1",
   "main": "src/index.mjs",
